@@ -141,7 +141,7 @@ terraform_apply:
 
     # Generates an execution plan for Terraform
     - name: Terraform Apply
-      run: terraform apply -auto-approve
+      run: terraform apply --auto-approve
       working-directory: ${{env.ROOT_PATH}}
 
     #   # On push to "main", build or change infrastructure according to Terraform configuration files
